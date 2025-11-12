@@ -4,12 +4,13 @@ Train three ML models (LinearRegression, RandomForest, GradientBoosting) on the 
 
 ## Project Structure
 
+```bash
 admission-predict/
-├── models/                 
+├── models/                 # saved trained models
 ├── Admission_Predict.csv   # dataset
-├── requirements.txt
-├── README.md
-
+├── requirements.txt        # dependencies
+├── README.md               # project documentation
+```
 
 ## Quickstart (local)
 1. Create a virtual env:
