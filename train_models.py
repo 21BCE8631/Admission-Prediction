@@ -20,8 +20,8 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def load_and_clean(path):
-    df = pd.read_csv(path)
+def load_and_clean():
+    df = pd.read_csv('Admission_Predict.csv')
     # clean column names
     df.columns = df.columns.str.strip()
     # drop serial no if present
@@ -126,7 +126,7 @@ def save_coefficients_linear(model, feature_names, outdir):
 
 def main(args):
     os.makedirs(args.outdir, exist_ok=True)
-    df = load_and_clean(args.input)
+    df = load_and_clean( )
     print("Data loaded. Shape:", df.shape)
     plot_correlation(df, args.outdir)
 
